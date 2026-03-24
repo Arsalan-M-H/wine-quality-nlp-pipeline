@@ -39,7 +39,7 @@ output = model.predict(data_tfidf)
 
 original_data['quality'] = output
 original_data['run_date'] = current_date
-original_data.to_csv(f'{year} {month} Review_output.csv', index = False)
+original_data.to_csv(f'{year} {month} description_output.csv', index = False)
 # Adding quality output and date the model was run to the original dataset, so we can still have access to other features for our dashboard
 
 connection.close()
